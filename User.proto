@@ -1,0 +1,11 @@
+syntax="proto2";
+package netty;
+option java_package="com.hzz";
+option java_outer_classname="UserProto";
+
+message User{
+    required int32 ID=1;
+    required string userName=2;
+    required string Password=3;
+    repeated string address=4;
+}
